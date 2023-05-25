@@ -8,9 +8,6 @@
   <title>Academys</title>
 </head>
 <body>
-  <header>
-   
-  </header>
   <main class="container">
     <div class="photoBox">
       <h1><strong class="boldWords">Ambiente confiável</strong> para o armazenamento dos seus <strong class="boldWords">dados acadêmicos</strong>.</h1>
@@ -20,14 +17,45 @@
       <h1>Academys</h1>
       <div class="registerBox">
         <h1 class="registerTitle">Alunos</h1>
-        <button class="registerButton">Cadastrar aluno</button>
+        <button id="studentButton">Cadastrar aluno</button>
       </div>      
       <div class="line"></div>
       <div class="registerBox">
         <h1 class="registerTitle">Professores</h1>
-        <button class="registerButton">Cadastrar professor</button>
+        <button id="teacherButton">Cadastrar professor</button>
       </div>
     </div>
+      <img src="./img/seta.png" alt="icone-voltar" class="iconBack">
+      <!-- cadastrar aluno -->
+      <div class="studentFormContainer">
+        <h1 class="formTitle">Cadastrar novo <strong>Aluno</strong></h1>
+        <div class="line"></div>
+        <form action="" method="" id="studentForm"">
+          <input type="text" name="name" id="studentName" placeholder="Nome" autocomplete="off" required>
+
+          <input type="text" name="matricula" id="studentRegistration" placeholder="Matrícula" autocomplete="off" required>
+
+          <input type="text" name="course" id="studentCourse" placeholder="Curso" autocomplete="off" required>
+
+          <button type="submit" id="studentFormButton">Cadastrar aluno</button>
+        </form>
+      </div>
+      <div class="studentPhoto"></div>
+      <!-- cadastrar professor -->
+      <div class="teacherFormContainer">
+        <h1 class="formTitle">Cadastrar novo <strong>Professor</strong></h1>
+        <div class="line"></div>
+        <form action="" method="" id="teacherForm"">
+          <input type="text" name="name" id="teacherName" placeholder="Nome" autocomplete="off" required>
+
+          <input type="text" name="matricula" id="teacherRegistration" placeholder="Matrícula" autocomplete="off" required>
+
+          <input type="text" name="dicipline" id="teacherDicipline" placeholder="Diciplina" autocomplete="off" required>
+
+          <button type="submit" id="teacherFormButton">Cadastrar professor</button>
+        </form>
+      </div>
+      <div class="teacherPhoto"></div>
   </main>
   <script src="./index.js"></script>
 </body>
